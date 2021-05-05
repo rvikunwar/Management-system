@@ -213,7 +213,7 @@
 		color: #797979;
 		font-size: 18px;
 		font-weight: 100;
-		margin: -20px -10px 5px 5px;
+		margin: 10px -10px 15px 5px;
 	}
 	.msg_4{
 	
@@ -223,13 +223,13 @@
 	color: #FFFFFF;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 14px;
-margin-top: 3px;
+	margin-top: 3px;
 	padding: 8px 6px;
 	text-decoration: none;
     margin-left: 0px;
 	outline: none;
 	height: 20px;
-   min-width: 150px;
+   	min-width: 150px;
 	}
 
 	
@@ -247,7 +247,6 @@ margin-top: 3px;
     width: 70px;
 	text-decoration: none;
     margin-top: 3px;
-
 	outline: none;
 
 }
