@@ -169,13 +169,15 @@
 }
 
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:450px){
 	.form-style-8{
 		font-family: 'Open Sans Condensed', arial, sans;
 		width: 80%;
-		margin-left: 8%;
+		margin-left: 13%;
 		box-sizing: border-box;
-		background: #FFFFFF;
+		background: transparent;
+		border:1px solid white;
+		padding-left: 10px;
 	}
 
 	.form_2{
