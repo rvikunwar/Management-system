@@ -171,17 +171,22 @@
 
 @media only screen and (max-width:450px){
 	.form-style-8{
+
 		font-family: 'Open Sans Condensed', arial, sans;
 		width: 80%;
-		margin-left: 13%;
+		margin-left: 10%;
 		box-sizing: border-box;
 		background: transparent;
-		border:1px solid white;
+		border:1px solid rgba(255,255,255,0.7);
 		padding-left: 10px;
+		margin-bottom: 30px;
+	
 	}
 
 	.form_2{
 		min-height: 145px;
+
+	
 	}
 	.form-style-8 input[type="text"],
 	.form-style-8 input[type="password"]
@@ -203,6 +208,7 @@
 	}
 	.poo{
 		width: 100%;
+		
 		display: flex;
 		flex-wrap: wrap;
 		
@@ -232,6 +238,7 @@
 	outline: none;
 	height: 20px;
    	min-width: 150px;
+	  
 	}
 
 	

@@ -39,7 +39,7 @@ function Login({ login, isAuthenticated }) {
                <div className="poo">
                 <input type="submit" className="button_1" value="LOGIN" />
               
-                <input  className="msg_4" defaultValue=" Only ,if you have to upload . . ." />
+                <p  className="msg_4">Only ,if you have to upload . . .</p>
                 </div>
             </form>
             </div>

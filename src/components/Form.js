@@ -205,7 +205,7 @@ return () => {
                 
                      <input className="button" type="button"  value="SUBMIT" />
                 </Link>
-                <input className="msg_3" defaultValue=" Check your study material . . ." />
+                <p className="msg_3" >Check your study material . . .</p>
                </div>
         
             </form>

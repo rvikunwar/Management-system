@@ -9,6 +9,7 @@
   position: relative;
   background-color: white;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+  box-sizing: border-box;
   padding-top: 1px;
 }
 
@@ -52,15 +53,16 @@
 
   .first_page{
  
-    min-height: 100vh;
-    color: white;
-    width:98%;
-    margin-top: 0vh;
-    box-sizing: border-box;
-    margin-left: -1px;
-    position: relative;
-    background-color: white;
-    box-shadow: none;
+    
+  min-height:500px;
+ width:100%;
+  margin-top:0vh;
+  margin-left: 0%;
+  padding-bottom: 10px;
+  position: relative;
+  background-color:none;
+  box-shadow: none;
+  padding-top: none;
     background-image: url("https://images.unsplash.com/photo-1572061487787-3cd4292f12bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
 
   }
@@ -70,11 +72,12 @@
     width: 48%;
     height: 1px;
     border:none;
-    border-top: 1px solid rgba(255,255,255,0.8);
+    border-top: 0.002px solid rgba(255,255,255,0.3);
   }
   .or_1{
+ 
     margin-top: -2px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.2);
 
   }
   

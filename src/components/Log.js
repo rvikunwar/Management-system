@@ -9,7 +9,7 @@ function Log() {
 
         <Form />
         <div className = "or">
-        <hr className = "line" /> <p className = "or_1" > OR </p><hr className="line"/>
+        <hr className = "line" /> <p className = "or_1" > o r </p><hr className="line"/>
         </div> 
         <Login/>
 
