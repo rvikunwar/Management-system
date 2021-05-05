@@ -143,7 +143,9 @@ height: 30px;
     margin-left: 10px;
     
 }
-
+.file_data_22 .p00 p::-webkit-scrollbar{
+    display: none;
+}
 
 
 

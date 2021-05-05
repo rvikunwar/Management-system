@@ -62,6 +62,9 @@
     margin-left: 10px;
     
 }
+.file_data_2 .p0 p::-webkit-scrollbar {
+    display: none;
+  }
 
 
 

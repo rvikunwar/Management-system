@@ -5,7 +5,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import {
  
   
-    Link
+    Link, Redirect
   } from "react-router-dom";
 import axios from '../axios'
 import fileDownload from 'js-file-download'
@@ -38,8 +38,7 @@ const onDelete = (id) => {
         axios.delete(`/subjectdet/${id}/`)
         
         .catch((err)=>console.log(err))
-
-      
+        window.location.href = "/upload"
     };
     return 0
 }
@@ -60,12 +59,16 @@ const onDelete = (id) => {
                             <p>{ path.basename(a)}</p>
                              <div className="bbb_1">
                                     <button onClick={()=>{
-                            
+                             if(window.confirm("Are you sure to delete")){
                              axios.delete(`/file/${file_id[file.indexOf(a)]}/`)
                              .then((res)=>{
                              
                              })
                              .catch((err)=>console.log(err))
+                             window.location.href = "/upload"
+                            }
+                           
+
                         }} >Delete</button>
                          <button onClick={()=>{
                             
