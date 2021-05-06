@@ -137,7 +137,7 @@ return () => {
 
     return (
         <div className="form">
-
+            <p className="di">Content management system</p>
         <h2>CHECK YOUR STUDY MATERIAL</h2>
             <form className="form_data">
                 <div className="field">

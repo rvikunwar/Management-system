@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
 .form{
     width: 60%;
@@ -8,6 +9,9 @@
     display: flex;
     flex-direction: column;
   
+}
+.di{
+	display: none;
 }
 .form h2{
 
@@ -73,6 +77,7 @@ select{
 .lp{
 	width: 60%;
 	display: flex;
+	margin-top: 7px;
 }
 
 
@@ -88,6 +93,7 @@ select{
     margin-left: 10px;
 	outline: none;
     width: 40%;
+	margin-top: 0px;
 }
 
 .dropdown{
@@ -174,6 +180,15 @@ select{
 	}
 	
 
+	.di{
+		font-family: 'Didact Gothic', sans-serif;
+
+		display: block;
+		font-size: 28px;
+		color: white;
+		margin-bottom: 0px;
+	}
+
 	.form_data{
 	
 		display: flex;
@@ -234,7 +249,6 @@ select{
 	color: rgba(0,0,0,0.6);
 	background-color:  rgba(0,0,0,0.03);
 	margin-top: 2px;
-
 	margin-left: 1px;
 }
 
@@ -298,7 +312,8 @@ margin-top: 3px;
 	height: 28px;
 	color:rgba(255,255,255,0.8);
 	border: 1px solid rgba(255,255,255,0.3);
-
+ height:32px;
+ margin-top: 3px;
 
 } 
 

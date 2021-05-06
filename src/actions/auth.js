@@ -89,7 +89,12 @@ export const login = (username, password) => async dispatch => {
     const body = JSON.stringify({ username, password });
 
     try {
-        const res = await axios.post(`https://studycontent.herokuapp.com/auth/jwt/create/`, body, config);
+        const res = await axios.post(`https://studycontent.herokuapp.com/auth/jwt/create/`, body, config)
+        .catch(()=>{
+            if(window.confirm("Wrond password and username ,please enter agian")){
+
+            }
+        })
 
         dispatch({
             type: LOGIN_SUCCESS,

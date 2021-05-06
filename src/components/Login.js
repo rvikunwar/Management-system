@@ -18,7 +18,8 @@ function Login({ login, isAuthenticated }) {
     const onSubmit = e => {
         e.preventDefault();
 
-        login(username, password);
+       login(username, password);
+         
     };
 
     if (isAuthenticated) {
@@ -31,7 +32,7 @@ function Login({ login, isAuthenticated }) {
 
             <div className="form-style-8">
             <h2>Login to your account</h2>
-            <form className="form_2" onSubmit={e => onSubmit(e)}>
+            <form className="form_2 dsa" onSubmit={e => onSubmit(e)}>
                 <input type="text" name="username" placeholder="Username" defaultValue={username}
                         onChange={e => onChange(e)} required />
                 <input type="password" name="password" placeholder="Password"  defaultValue={password}

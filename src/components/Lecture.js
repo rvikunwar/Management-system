@@ -5,7 +5,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import {
  
   
-    Link, Redirect
+    Link
   } from "react-router-dom";
 import axios from '../axios'
 import fileDownload from 'js-file-download'
