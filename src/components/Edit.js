@@ -86,8 +86,9 @@ const [ddd,setddd]=useState([])
                           <button onClick={()=>{
                              
                               axios.delete(`/file/${a["id"]}/`)
+                              
                              
-                              .catch((err)=>console.log(err))
+                              .catch((err)=>window.alert("Some error occured ",err.message))
                          }} >Delete</button>
                         
                           </div>

@@ -81,8 +81,10 @@
 	outline: none;
     letter-spacing: 1px;
     width:120px;
-    height: 25px;
+    height: 80%;
     margin-right: 19px;
+    margin-top: 1%;
+ 
    
 
 }
@@ -147,6 +149,7 @@ height: 30px;
     height: 25px;
     margin-top: 0px;
     margin-right: 10px;
+    margin-bottom: 10px;
  
 }
 

@@ -22,7 +22,7 @@ function EditBanner(props) {
         })
     },[numm.numm])
 
-
+console.log(numm.numm)
     return (
       
         <div className="editbanner">
@@ -32,8 +32,9 @@ function EditBanner(props) {
                         <input defaultValue={props.profo_1[0].position} id="ppp" className="a_1 prof_title_1"/>
                         <input defaultValue={props.profo_1[0].college}  id="cco" className="a_1 college_1" />
                     </div>
+                    {(numm.numm!==-1)? 
             <div  className="subjects_det_1">
-                    <div className="po">
+                  <div className="po">
                         <input type="text" defaultValue={st.subject} id="suv" className="subject_1"/>  
 
                         <div className="batchdata">
@@ -41,18 +42,24 @@ function EditBanner(props) {
                             <input defaultValue={st.semester} id="ss" type="text" className="s_1" /> 
                             <input defaultValue={st.course} id="cc" type="text" className="s_1" /> 
                         </div>
-                        <a href ="/upload/">
+                     
                              <button className="add_new_2" onClick={()=>{
+                                 if(window.confirm("Are you sure you want to delete")){
                                   axios.delete(`/contentrestriction/${numm.numm}`)
+                                  .then(()=>{
+                                      window.location.href="/upload"
+                                  })
                               
-                                  .catch((err)=>console.log(err))
+                                  .catch((err)=>window.alert("Some error occured",err))
+                                }
                              }}>DELETE THE SUBJECT</button>
-                        </a>
+               
                      </div>
                     
+            </div>: <></>
+                    
                
-
-            </div>
+                }
 
             <div className="link_1">
                <a href="/upload">

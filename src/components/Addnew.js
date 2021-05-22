@@ -49,7 +49,7 @@ function Addnew(props) {
                     
                        
                                 <p>
-                                <a href="/upload">
+                               
                                 <input type = "submit"
                                 className="submitt"
                                 defaultValue = "SUBMIT DATA"
@@ -65,11 +65,14 @@ function Addnew(props) {
                             var body_1 = JSON.stringify(body);
                         
                                     axios.post("/contentrestriction/",body_1)
-                                    .then((res)=> console.log(res))
+                                    .then(()=> window.location.href="/upload")
+                                    .catch((err)=>{
+                                        window.alert("Some error occured ",err.message)
+                                    })
                                        
                         
                                     } }/>
-                                    </a>
+                               
                         </p> 
             </div> 
         </div>

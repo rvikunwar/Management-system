@@ -29,7 +29,7 @@ function Subject() {
             setprof(res.data[1])
              setSubdata(res.data[0])
          })
-         .catch((err)=>console.log(err))
+         .catch((err)=>window.alert("NO DATA AVALIABLE"))
     },[body_1]);
 
 const [mm,setm]=useState()

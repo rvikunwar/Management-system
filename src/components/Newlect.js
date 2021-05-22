@@ -22,7 +22,7 @@ function Newlect(props) {
                         
                        
                         <li>
-                            <a href="/upload">
+                           
                         <input type="submit" onClick={()=>{
                var body={
                    "chapter":document.querySelector("#ch").value,
@@ -31,14 +31,17 @@ function Newlect(props) {
                 }
             
                 
-               axios.post("/subjectdet/",JSON.stringify(body)).then((res)=> console.log(""))
+               axios.post("/subjectdet/",JSON.stringify(body)).then(()=> window.location.href="/upload")
+               .catch((err)=>{
+                   window.alert("Some error occur",err)
+               })
               
                   
    
                }
 
                         } defaultValue="SAVE "/>
-                        </a>
+                     
                         </li>
                         </ul>
               </div>
