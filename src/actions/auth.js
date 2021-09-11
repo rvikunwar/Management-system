@@ -25,7 +25,7 @@ export const load_user = () => async dispatch => {
         }; 
 
         try {
-            const res = await axios.get(`https://studycontent.herokuapp.com/auth/users/me/`, config);
+            const res = await axios.get(`http://127.0.0.1:8000/auth/users/me/`, config);
     
             dispatch({
                 type: USER_LOADED_SUCCESS,
@@ -55,7 +55,7 @@ export const checkAuthenticated = () => async dispatch => {
         const body = JSON.stringify({ token: localStorage.getItem('access') });
 
         try {
-            const res = await axios.post(`https://studycontent.herokuapp.com/auth/jwt/verify/`, body, config)
+            const res = await axios.post(`http://127.0.0.1:8000/auth/jwt/verify/`, body, config)
 
             if (res.data.code !== 'token_not_valid') {
                 dispatch({
@@ -89,7 +89,7 @@ export const login = (username, password) => async dispatch => {
     const body = JSON.stringify({ username, password });
 
     try {
-        const res = await axios.post(`https://studycontent.herokuapp.com/auth/jwt/create/`, body, config)
+        const res = await axios.post(`http://127.0.0.1:8000/auth/jwt/create/`, body, config)
         .catch(()=>{
             if(window.confirm("Wrond password and username ,please enter agian")){
 

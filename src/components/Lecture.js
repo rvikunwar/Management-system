@@ -2,9 +2,7 @@ import React,{useState} from 'react'
 import './css/lecture.css'
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
-import {
- 
-  
+import {  
     Link
   } from "react-router-dom";
 import axios from '../axios'
@@ -16,9 +14,9 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 function Lecture({chapter,file,file_id,description,id,date}) {
 
     const [loadingPercent, setLoadingPercent] = useState(0)
-const [con,setcon]=useState(false)
-const [fff,setfile]=useState()
-const [idd,]=useState(id)
+    const [con,setcon]=useState(false)
+    const [fff,setfile]=useState()
+    const [idd,]=useState(id)
 
 const submmit =()=>{
     const dataform =new FormData();
@@ -120,7 +118,7 @@ const onDelete = (id) => {
                 </div>
                    ))
                     
-                }
+               }
    
                 {(con)?
                  <div className="oneline">

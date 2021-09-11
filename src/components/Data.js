@@ -27,7 +27,10 @@ function Data(props) {
                             .then((res)=>{
                                 fileDownload(res.data,a)
                             })
-                            .catch((err)=>console.log(err)) }}>Download</button>
+                            .catch(()=>
+                            {window.alert("Retry , some error occurred")})
+                        }
+}>Download</button>
                             </div>
                             </div>
                  
