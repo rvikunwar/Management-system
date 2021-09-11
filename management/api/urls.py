@@ -14,6 +14,4 @@ urlpatterns = [
    path('getdata/',Getdata,name="getdata"), 
    path('file/',Filesdata),
    path('file/<pk>/',fileone),
-
-
 ]
